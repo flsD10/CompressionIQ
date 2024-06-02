@@ -5,7 +5,7 @@ import re
 import csv
 import zipfile
 folder = input('Enter the folder: ')
-date = folder.split("\\")[-1].split("_")[0]
+date = str(input("Enter date as it is listed in the files: "))
 
 results = os.popen("dir " + str(folder) + "\\*.zip").read()
 folder = folder.replace("\\", "\\\\")
