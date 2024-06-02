@@ -10,8 +10,7 @@ date = str(input("Enter date as it is listed in the files: "))
 results = os.popen("dir " + str(folder) + "\\*.zip").read()
 folder = folder.replace("\\", "\\\\")
 results = results.split("_")
-
-i = 2
+i = 1
 indexes = []
 cont = True
 while cont == True:
